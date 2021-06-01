@@ -1,0 +1,99 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    background: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+}
+
+.topnav ul li{
+    display:inline-block;
+}
+
+div > a {
+    color: blue;
+    display: inline-block;
+    text-align: right;
+}
+
+#page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items:  center;
+}
+#stories {
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(155, 15, 85);
+    text-align: right;
+}
+
+
+
+article > p {
+    background-color: yellow;
+    color: rgb(136, 28, 28);
+    text-align: center;
+}
+
+h1 {
+    color: #EF8354;
+    font-family: 'MuseoModerno', cursive;
+    text-align: center;
+}
+h2 {
+    color: rgb(59, 59, 218);
+    font-size: initial;
+    text-align: center;
+}
+
+
+a {
+    text-align: center;
+}
+header h2:nth-child(2) {
+    background: red;
+}
+
+
+img {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* margin-bottom: 20px; */
+}
+
+img + a {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+p { 
+    text-align: left;
+    display: block;
+}
+
+
+
+#secret-one:hover {
+    font-size: 3rem;
+    transition: font-size 5s ease-in-out;
+    background-color:aqua ;
+}
+
+
+#secret-one:active {
+    cursor: progress;
+    font-size: small;
+}
+
+footer {
+    color: rgb(59, 9, 196);
+    margin-top: 50px;
+}
