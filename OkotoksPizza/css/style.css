@@ -8,6 +8,7 @@
     display: grid;
     grid-template-rows: 1fr;
     height: 20vh;
+    margin: 2vh 2vw 2vh 2vw;
 }
 
 .navbar {
@@ -17,24 +18,101 @@
     justify-items: center;
     align-items: center;
 }
+#secret-one {
+    font-size: 2vh;
+}
 
 img {
     width: 10vh; 
 }
 
+.banner {
+    background-image: url('/banner.jpg');
+    width: 100%;
+    height: 40vh;
+    /* justify-items: center; */
+    /* align-items: center; */
+    text-align: center;
+}
 .content {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
     padding: 10px;
-  }
-  
-  .content > div {
+    justify-items: center;
+
+}
+
+.content > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px;
     font-size: 30px;
+}
+#mymove {
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 4s;
+}
+
+@keyframes mymove {
+    0%   {left:0px; top:0px;}
+    50%  {left:100px; top:100px;}    
+    100% {left:0px; top:0px;}
+}
+
+#secret-one:hover {
+    font-size: 1rem;
+    transition: font-size 1s ease-out;
+    background-color:aqua ;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+
+#secret-one:active {
+    cursor: progress;
+    font-size: small;
+}
+
+
+
+#picture {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: hotpink;
+    animation-name: picture;
+    animation-duration: 5s;
+}
+
+@keyframes picture {
+    from {background-color:hotpink;}
+    to {background-color: rgb(32, 219, 57);}
+}
+
+
+#secret-two {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+#secret-two:hover {
+    opacity: 100;
+    cursor:help ;
+}
+
+#secret-two:active {
+    background-color: khaki;
+    cursor: help;
+    margin-right: 30vw;
+    margin-left: 30vw;
+    font-weight: bolder;
+}
+
 /* 
 html {
     width: 60vw;
