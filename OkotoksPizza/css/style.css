@@ -4,114 +4,151 @@
     padding: 0;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: 1fr;
-    height: 20vh;
-    margin: 2vh 2vw 2vh 2vw;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: 2fr 4fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    justify-items: center;
-    align-items: center;
-}
-#secret-one {
-    font-size: 2vh;
-}
-
 img {
     width: 10vh; 
 }
 
-.banner {
-    background-image: url('/banner.jpg');
-    width: 100%;
-    height: 40vh;
-    /* justify-items: center; */
-    /* align-items: center; */
+.container {
     text-align: center;
 }
-.content {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    /* background-color: #2196F3; */
-    padding: 10px;
-    justify-items: center;
+@media only screen and (max-width:500px) {
+    .banner h1 {
+        color: coral;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-}
+    }
 
-.content > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-}
-#mymove {
-    position: relative;
-    animation-name: mymove;
-    animation-duration: 4s;
-}
+    .banner p {
+        visibility: hidden;
+    }
 
-@keyframes mymove {
-    0%   {left:0px; top:0px;}
-    50%  {left:100px; top:100px;}    
-    100% {left:0px; top:0px;}
-}
-
-#secret-one:hover {
-    font-size: 1rem;
-    transition: font-size 1s ease-out;
-    background-color:aqua ;
-    margin-left: 30vw;
-    margin-right: 30vw;
-}
+    .link a {
+        display: block;
+    }
 
 
-#secret-one:active {
-    cursor: progress;
-    font-size: small;
 }
 
 
 
-#picture {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    background-color: hotpink;
-    animation-name: picture;
-    animation-duration: 5s;
-}
+@media only screen and (min-width:1000px) {
+    .banner p {
+        color: darkgreen;
+        margin-top: 50px;
+        visibility: visible;
+        text-decoration-line: underline;
+    }
 
-@keyframes picture {
-    from {background-color:hotpink;}
-    to {background-color: rgb(32, 219, 57);}
-}
+    .container {
+        display: grid;
+        grid-template-rows: 1fr;
+        height: 20vh;
+        margin: 2vh 2vw 2vh 2vw;
+    }
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    #secret-one {
+        font-size: 2vh;
+    }
+    
+    
+    
+    .banner {
+        background-image: url('/banner.jpg');
+        width: 100%;
+        height: 40vh;
+        /* justify-items: center; */
+        /* align-items: center; */
+        text-align: center;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        /* background-color: #2196F3; */
+        padding: 10px;
+        justify-items: center;
+    
+    }
+    
+    .content > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+    
+    
+    #mymove {
+        position: relative;
+        animation-name: mymove;
+        animation-duration: 4s;
+    }
+    
+    @keyframes mymove {
+        0%   {left:0px; top:0px;}
+        50%  {left:100px; top:100px;}    
+        100% {left:0px; top:0px;}
+    }
+    
+    #secret-one:hover {
+        font-size: 1rem;
+        transition: font-size 1s ease-out;
+        background-color:aqua ;
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+    
+    
+    #secret-one:active {
+        cursor: progress;
+        font-size: small;
+    }
+    
+    
+    
+    #picture {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        background-color: hotpink;
+        animation-name: picture;
+        animation-duration: 5s;
+    }
+    
+    @keyframes picture {
+        from {background-color:hotpink;}
+        to {background-color: rgb(32, 219, 57);}
+    }
+    
+    
+    #secret-two {
+        opacity: 0;
+        transition: opacity 5s ease-in-out;
+    }
+    
+    #secret-two:hover {
+        opacity: 100;
+        cursor:help ;
+    }
+    
+    #secret-two:active {
+        background-color: khaki;
+        cursor: help;
+        margin-right: 30vw;
+        margin-left: 30vw;
+        font-weight: bolder;
+    }
 
-
-#secret-two {
-    opacity: 0;
-    transition: opacity 5s ease-in-out;
-}
-
-#secret-two:hover {
-    opacity: 100;
-    cursor:help ;
-}
-
-#secret-two:active {
-    background-color: khaki;
-    cursor: help;
-    margin-right: 30vw;
-    margin-left: 30vw;
-    font-weight: bolder;
-}
+    }
 
 /* 
 html {
