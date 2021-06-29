@@ -1,0 +1,68 @@
+$background-colour: rgb(1, 68, 155);
+$text-colour: white;
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: $background-colour;
+    color: $text-colour;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.navbar a {
+    text-align: center;
+    color: $text-colour;
+}
+
+.footer {
+    background-color: $background-colour;
+    height: 100px;
+    width: 100%;
+    display: block;
+    color: $text-colour;
+    text-align: center;
+
+    p{
+        margin-top: 20px;
+    }
+
+    img {
+        display: block;
+        padding-top: 20px;
+        margin: auto;
+        width: 100px;
+        height: auto;
+        }
+
+    #up-btn img {
+        width: 30px;
+        height: auto;
+        background: black;
+        position: absolute;
+        right: 20px;
+        }
+    }

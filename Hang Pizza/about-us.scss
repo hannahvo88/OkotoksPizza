@@ -1,0 +1,176 @@
+
+@import"_hf.scss";
+@import"_variable.scss";
+
+p {
+    text-align: left;
+}
+.video-content {
+    width: 100%;
+
+    iframe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    }
+}
+
+.story , .ingredients {
+    text-align: center;
+    color: $au-text-colour;
+
+    p {
+        margin-top: 20px;
+        margin-left: 20px;
+        display: block;
+        color: black;
+    }
+    
+    img {
+        margin: 20px 20px 20px 20px;
+        width: 300px;
+        height: 300px;
+        float: right;
+    }
+}
+
+.write-review {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $au-text-colour;
+}
+
+.customer-review {
+
+    h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    p {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    .image-customer img {
+    border-radius: 50%;
+    width: 10vh;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+
+/*Mobile Break Point*/
+@media (min-width: 400px) {
+    .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .header ul a {
+    border-bottom: none;
+    border-right: 2px solid wheat;
+    }
+    .header li {
+    float: left;
+    list-style: none;
+    }
+
+    .header li a {
+    padding: 20px 10px;
+    font-size: 1rem;
+    }
+
+    .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    }
+    
+    .up-btn {
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    line-height: 70px;
+    font-size: 30px;
+    padding-top: 12px;
+    }
+}
+
+/*Latop/desktop break point*/
+@media (min-width: 900px) {
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: center;
+      align-items: center;
+    }
+    .header img {
+      width: 100px; 
+      padding: 10px;
+    }
+    .header li {
+      float: left;
+      list-style: none;
+    }
+  
+    .header li a {
+      padding: 20px 30px;
+      font-size: 1.4rem;
+    }
+
+    
+      .customer-review {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+      .customer-review { 
+        width: 100%;
+        margin:auto;
+    
+    
+      }
+      .image-customer img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float: left;
+        margin: 10px;
+      }
+      .reviewer-name p {
+        line-height: 25px;
+        text-align: justify;
+      }
+
+      #footer {
+        height: 96px;
+      }
+
+      .up-btn {
+        width: 70px;
+        height: 70px;
+        bottom: 25px;
+        right: 30px;
+        line-height: 70px;
+        font-size: 40px;
+        padding-top: 15px;
+      }
+      
+    }
+    
