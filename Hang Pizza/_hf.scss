@@ -17,7 +17,10 @@ a {
 }
 
 .header {
-    background-color: $background-colour;
+    // background-color: $background-colour;
+    
+    background-image: url(Pictures/background.jpg);
+    background-size: cover;
     color: $text-colour;
 }
 

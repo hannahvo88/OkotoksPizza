@@ -5,6 +5,7 @@
 
 .banner {
     position: relative;
+    margin-top: 25px;
 
     h1 {
     position: absolute;
@@ -22,6 +23,7 @@
 
 #main-image {
         width: 100%;
+        height: auto;
     }
 
 
@@ -40,8 +42,9 @@
     img {
         border-radius: 10%;
         border: 2px solid black;
-        height: 300px;
-        width: 100%;
+        height: auto;
+        width: 50%;
+        object-fit: fill;
     }
 
     a {
@@ -73,33 +76,27 @@
 }
 
 /*Mobile Break Point*/
-@media (min-width: 400px) {
-    .header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-items: center;
-    align-items: center;
-    }
+@media only screen and (min-width: 400px) {
+    // .header {
+    // display: grid;
+    // grid-template-columns: 1fr 2fr;
+    // justify-items: center;
+    // align-items: center;
+    // }
 
-    .header ul a {
-    border-bottom: none;
-    border-right: 2px solid;
-    }
-    .header li {
-    float: left;
-    list-style: none;
-    }
+    // .header ul a {
+    // border-bottom: none;
+    // border-right: 2px solid;
+    // }
+    // .header li {
+    // float: left;
+    // list-style: none;
+    // }
 
-    .header li a {
-    padding: 20px 10px;
-    font-size: 1rem;
-    }
-
-    .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-    }
+    // .header li a {
+    // padding: 20px 10px;
+    // font-size: 1rem;
+    // }
     
     .up-btn {
     width: 55px;
@@ -113,17 +110,17 @@
 }
 
 /*Tablet break point*/
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 .header {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr;
     justify-items: center;
     align-items: center;
 }
 
 .header ul a {
     border-bottom: none;
-    border-right: 2px solid;
+    border-right: 2px solid wheat;
 }
 
 .header li {
@@ -141,19 +138,22 @@
     float: right;
     max-height: none;
 }
-
-.navbar {
-    display: block;
-    width: 70%;
-    top: 40px;
-    left: 200px;
+.banner {
+    h1 {
+    font-size: 3em;
+    top:130px;
+    bottom: 100px;
+    left: 50px;
 }
-
-.banner p {
+    p {
     visibility: visible;
     color: chocolate;
+    position: absolute;
+    top:100px;
+    left:65px;
+    font-size: 2em;
 }
-
+}
 .up-btn {
     width: 55px;
     height: 55px;
@@ -174,7 +174,7 @@
 }
 
 /*Latop/desktop break point*/
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr;

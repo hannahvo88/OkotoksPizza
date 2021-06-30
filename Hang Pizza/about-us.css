@@ -14,7 +14,8 @@ a {
 }
 
 .header {
-  background-color: #01449b;
+  background-image: url(Pictures/background.jpg);
+  background-size: cover;
   color: white;
 }
 
@@ -69,7 +70,8 @@ p {
 }
 
 .video-content {
-  width: 100%;
+  width: auto;
+  height: 315;
 }
 
 .video-content iframe {
@@ -94,16 +96,15 @@ p {
 
 .story img, .ingredients img {
   margin: 20px 20px 20px 20px;
-  width: 300px;
-  height: 300px;
-  float: right;
+  width: 40%;
+  height: auto;
+  display: block;
 }
 
 .write-review {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: blue;
 }
 
 .customer-review h1 {
@@ -124,13 +125,30 @@ p {
   border-radius: 50%;
   width: 10vh;
   height: auto;
-  float: left;
+  display: block;
   margin-left: 20px;
   margin-right: 20px;
 }
 
+footer p {
+  text-align: center;
+}
+
 /*Mobile Break Point*/
-@media (min-width: 400px) {
+@media only screen and (min-width: 400px) {
+  .up-btn {
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    line-height: 70px;
+    font-size: 30px;
+    padding-top: 12px;
+  }
+}
+
+/*Tablet break point*/
+@media only screen and (min-width: 600px) {
   .header {
     display: -ms-grid;
     display: grid;
@@ -150,7 +168,7 @@ p {
     list-style: none;
   }
   .header li a {
-    padding: 20px 10px;
+    padding: 20px 15px;
     font-size: 1rem;
   }
   .header .menu {
@@ -159,6 +177,7 @@ p {
     max-height: none;
   }
   .up-btn {
+    position: fixed;
     width: 55px;
     height: 55px;
     bottom: 30px;
@@ -170,7 +189,17 @@ p {
 }
 
 /*Latop/desktop break point*/
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
+  .our-story, .better-ingredient {
+    margin: 20px 20px 20px 20px;
+  }
+  .our-story img, .better-ingredient img {
+    display: inline;
+    float: right;
+  }
+  .our-story p, .better-ingredient p {
+    float: left;
+  }
   .header {
     display: -ms-grid;
     display: grid;
@@ -186,12 +215,19 @@ p {
     padding: 10px;
   }
   .header li {
-    float: left;
     list-style: none;
   }
   .header li a {
     padding: 20px 30px;
     font-size: 1.4rem;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .write-review {
+    display: block;
   }
   .customer-review {
     display: -ms-grid;
@@ -200,8 +236,8 @@ p {
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
+    gap: 20px 20px;
+    margin: 5px 5px 5px 5px;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -209,7 +245,6 @@ p {
   }
   .customer-review {
     width: 100%;
-    margin: auto;
   }
   .image-customer img {
     width: 100px;
@@ -221,9 +256,6 @@ p {
   .reviewer-name p {
     line-height: 25px;
     text-align: justify;
-  }
-  #footer {
-    height: 96px;
   }
   .up-btn {
     width: 70px;
