@@ -44,29 +44,30 @@ img {
 
 .footer {
     background-color: $background-colour;
-    height: 100px;
+    height: 126px;
     width: 100%;
     display: block;
     color: $text-colour;
     text-align: center;
 
     p{
-        margin-top: 20px;
+        padding-top: 25px;
     }
 
     img {
         display: block;
         padding-top: 20px;
         margin: auto;
-        width: 100px;
+        width: 250px;
         height: auto;
         }
 
     #up-btn img {
-        width: 30px;
+        width: 55px;
         height: auto;
-        background: black;
-        position: absolute;
+        // background: black;
+        position: fixed;
         right: 20px;
+        bottom: 20px;
         }
     }

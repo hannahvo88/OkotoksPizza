@@ -39,7 +39,7 @@ img {
 
 .footer {
   background-color: #01449b;
-  height: 100px;
+  height: 126px;
   width: 100%;
   display: block;
   color: white;
@@ -47,23 +47,23 @@ img {
 }
 
 .footer p {
-  margin-top: 20px;
+  padding-top: 25px;
 }
 
 .footer img {
   display: block;
   padding-top: 20px;
   margin: auto;
-  width: 100px;
+  width: 250px;
   height: auto;
 }
 
 .footer #up-btn img {
-  width: 30px;
+  width: 55px;
   height: auto;
-  background: black;
-  position: absolute;
+  position: fixed;
   right: 20px;
+  bottom: 20px;
 }
 
 .banner {
@@ -121,7 +121,7 @@ img {
 
 .main-sections img {
   border-radius: 10%;
-  border: 2px solid black;
+  border: 10px solid #fc1c1c;
   height: auto;
   width: 50%;
   -o-object-fit: fill;
@@ -135,7 +135,7 @@ img {
 }
 
 .main-sections p {
-  color: #045f9c;
+  color: wheat;
 }
 
 .store-info {

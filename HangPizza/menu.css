@@ -39,7 +39,7 @@ img {
 
 .footer {
   background-color: #01449b;
-  height: 100px;
+  height: 126px;
   width: 100%;
   display: block;
   color: white;
@@ -47,28 +47,29 @@ img {
 }
 
 .footer p {
-  margin-top: 20px;
+  padding-top: 25px;
 }
 
 .footer img {
   display: block;
   padding-top: 20px;
   margin: auto;
-  width: 100px;
+  width: 250px;
   height: auto;
 }
 
 .footer #up-btn img {
-  width: 30px;
+  width: 55px;
   height: auto;
-  background: black;
-  position: absolute;
+  position: fixed;
   right: 20px;
+  bottom: 20px;
 }
 
 .header-menu h2 {
   color: blue;
   font: 3em x-large;
+  margin-top: 20px;
 }
 
 .product {
@@ -82,10 +83,16 @@ img {
   margin-right: auto;
   margin-top: 10px;
   display: block;
-  width: 55%;
+  height: 200px;
+  max-width: 90%;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px wheat;
-          box-shadow: 5px 10px wheat;
+  padding-top: 15px;
+}
+
+.product .price {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: white;
 }
 
 .product h3 {
@@ -113,6 +120,18 @@ img {
   color: white;
 }
 
+.button {
+  padding: 0.6rem 1.2rem;
+  font-size: 2rem;
+  border-radius: 25px;
+  background-color: #e9ae40;
+  color: white;
+}
+
+.product:hover .description {
+  opacity: 1;
+}
+
 /*Mobile Break Point*/
 @media only screen and (min-width: 400px) {
   .up-btn {
@@ -124,6 +143,11 @@ img {
     font-size: 30px;
     padding-top: 12px;
   }
+}
+
+.specials {
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 /*Tablet break point*/
@@ -167,6 +191,8 @@ img {
   }
   .regular-pizza, .chicken-wings, .specials, .pasta-menu, .side-menu {
     display: block;
+    width: 85vw;
+    margin: auto;
   }
   .specials,
   .wings,
@@ -186,8 +212,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -205,6 +229,7 @@ img {
   .pizzas, .sides, .pastas, .wingss, .sides {
     background-color: #0d1b69;
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -255,8 +280,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
     margin-top: 30px;
     margin-bottom: 30px;
   }
