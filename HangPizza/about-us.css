@@ -213,6 +213,11 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .story, .ingredients, .write-review {
+    width: 85vw;
+    margin: auto;
+  }
   .header img {
     width: 100px;
     padding: 10px;
