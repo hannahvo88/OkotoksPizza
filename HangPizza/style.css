@@ -135,7 +135,9 @@ img {
 }
 
 .main-sections p {
-  color: wheat;
+  color: #77510a;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .store-info {
