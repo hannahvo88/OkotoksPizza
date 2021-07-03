@@ -54,6 +54,25 @@
         margin-top: 20px;
         margin-bottom: 20px;
 
+        h1 {
+            animation-duration: 5s;
+            animation-name: slidein;
+
+        @keyframes slidein {
+          from {
+          
+            margin-left: 100%;
+            width: 200%;}
+
+          to {
+        
+            margin-left: 0%;
+            width: 100%;
+          }
+        
+        }
+        }
+
     }
     
     img {
@@ -83,8 +102,15 @@
     margin-bottom: 20px;
 
         h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 2em;
         color: rgb(231, 231, 231);
+        }
+
+        h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
         }
 
         iframe {
@@ -116,7 +142,24 @@
     // padding: 20px 10px;
     // font-size: 1rem;
     // }
-    
+    .banner h1 {
+        animation-duration: 5s;
+        animation-name: slideout;
+
+        @keyframes slideout {
+          from {
+          
+            margin-left: 100%;
+            width: 200%;}
+
+          to {
+        
+            margin-left: 0%;
+            width: 100%;
+          }
+        
+        }
+    }
     .up-btn {
     width: 55px;
     height: 55px;

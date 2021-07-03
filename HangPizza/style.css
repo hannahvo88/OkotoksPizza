@@ -7,12 +7,12 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   text-align: center;
-  background-color: #d2bfd3;
+  background-color: #ffcdcd;
 }
 
 h1 {
   color: whitesmoke;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px white, 0 0 25px red, 0 0 5px darkred;
 }
 
 h2 {
@@ -128,6 +128,35 @@ img {
   margin-bottom: 20px;
 }
 
+.main-sections .section h1 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .main-sections img {
   border-radius: 10%;
   border: 10px solid #fc1c1c;
@@ -156,8 +185,15 @@ img {
 }
 
 .store-info h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 2em;
   color: #e7e7e7;
+}
+
+.store-info h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .store-info iframe {
@@ -168,6 +204,32 @@ img {
 
 /*Mobile Break Point*/
 @media only screen and (min-width: 400px) {
+  .banner h1 {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: slideout;
+            animation-name: slideout;
+  }
+  @-webkit-keyframes slideout {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slideout {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
   .up-btn {
     width: 55px;
     height: 55px;

@@ -7,12 +7,12 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   text-align: center;
-  background-color: #d2bfd3;
+  background-color: #ffcdcd;
 }
 
 h1 {
   color: whitesmoke;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px white, 0 0 25px red, 0 0 5px darkred;
 }
 
 h2 {
@@ -76,9 +76,35 @@ img {
 }
 
 .header-menu h2 {
-  color: blue;
+  color: #3838e6;
   font: 3em x-large;
   margin-top: 20px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+}
+
+@-webkit-keyframes slideout {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .product {
@@ -96,6 +122,8 @@ img {
   max-width: 90%;
   border-radius: 10px;
   padding-top: 15px;
+  -webkit-box-shadow: 5px 10px wheat;
+          box-shadow: 5px 10px wheat;
 }
 
 .product .price {
@@ -107,7 +135,7 @@ img {
 .product h3 {
   margin-top: 15px;
   font: 2em sans-serif;
-  color: goldenrod;
+  color: #2814d6;
 }
 
 .product p {
@@ -203,11 +231,7 @@ img {
     width: 85vw;
     margin: auto;
   }
-  .specials,
-  .wings,
-  .pizza,
-  .pasta,
-  .side {
+  .specials, .wings, .pizza, .pasta, .side {
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -236,7 +260,7 @@ img {
             column-gap: 10px;
   }
   .pizzas, .sides, .pastas, .wingss, .sides {
-    background-color: #0d1b69;
+    background-color: #ff7474;
     height: 100%;
     width: 100%;
   }

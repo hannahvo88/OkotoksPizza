@@ -37,8 +37,25 @@ p {
     .about-text p {
         margin-top: 20px;
         margin-left: 20px;
-        display: block;
+        // display: block;
         color: black;
+        font: 1.5em sans-serif;  
+        animation-duration: 8s;
+        animation-name: slidein;
+
+        @keyframes slidein {
+          from {
+          
+            margin-left: 80%;
+            width: 80%;}
+
+          to {
+        
+            margin-left: 0%;
+            width: 50%;
+          }
+        
+        }
     }
     
     img {
