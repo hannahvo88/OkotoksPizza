@@ -46,9 +46,17 @@ img {
   color: white;
 }
 
+.navbar a img {
+  display: block;
+  padding-top: 20px;
+  margin-left: 0;
+  width: 25px;
+  height: auto;
+}
+
 .footer {
   background-color: #01449b;
-  height: 126px;
+  height: 200px;
   width: 100%;
   display: block;
   color: white;
@@ -71,8 +79,34 @@ img {
   width: 55px;
   height: auto;
   position: fixed;
-  right: 20px;
+  right: 30px;
   bottom: 20px;
+}
+
+#up-btn img:hover {
+  opacity: 0.5;
+}
+
+.go-up {
+  display: none;
+}
+
+#up-btn img:hover + span {
+  display: block;
+  position: fixed;
+  right: 15px;
+  bottom: 85px;
+  background-color: blanchedalmond;
+}
+
+#social-media img {
+  width: 40px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer a {
+  display: inline-block;
 }
 
 p {

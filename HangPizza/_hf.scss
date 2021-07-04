@@ -47,14 +47,24 @@ img {
     display: block;
 }
 
-.navbar a {
+.navbar {
+    a{
     text-align: center;
     color: $text-colour;
+
+    img {
+        display: block;
+        padding-top: 20px;
+        margin-left: 0;
+        width: 25px;
+        height: auto;
+        }
+    }
 }
 
 .footer {
     background-color: $background-colour;
-    height: 126px;
+    height: 200px;
     width: 100%;
     display: block;
     color: $text-colour;
@@ -77,7 +87,42 @@ img {
         height: auto;
         // background: black;
         position: fixed;
-        right: 20px;
+        right: 30px;
         bottom: 20px;
+        // display: none;
+
+        // span:hover + #up-btn {
+        //     display: block;
+        // }
         }
+    
     }
+
+    #up-btn img:hover {
+        opacity: 0.5;
+    }
+
+    .go-up {
+        display: none;
+    }
+
+
+     #up-btn img:hover + span {
+        display: block;
+        position: fixed;
+        right: 15px;
+        bottom: 85px;
+        background-color: blanchedalmond;
+     }
+
+
+#social-media img {
+    width: 40px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.footer a {
+    display: inline-block;
+}
