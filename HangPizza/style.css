@@ -193,7 +193,7 @@ img {
 
 .main-sections img {
   border-radius: 10%;
-  border: 10px solid #fc1c1c;
+  border: 10px solid green;
   height: auto;
   width: 50%;
   -o-object-fit: fill;
@@ -237,6 +237,12 @@ img {
 }
 
 /*Mobile Break Point*/
+@media only screen and (max-width: 400px) {
+  .btn {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 400px) {
   .banner h1 {
     -webkit-animation-duration: 5s;
@@ -276,6 +282,12 @@ img {
 }
 
 /*Tablet break point*/
+@media only screen and (max-width: 600px) {
+  .btn {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .header {
     display: -ms-grid;
@@ -327,7 +339,7 @@ img {
     padding: 16px 30px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20%;
     text-align: center;
   }
   .btn:hover {
@@ -385,7 +397,7 @@ img {
     padding: 16px 30px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20%;
     text-align: center;
   }
   .btn:hover {

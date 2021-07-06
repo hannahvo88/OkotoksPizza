@@ -78,7 +78,7 @@
     
     img {
         border-radius: 10%;
-        border: 10px solid rgb(252, 28, 28);
+        border: 10px solid green;
         height: auto;
         width: 50%;
         object-fit: fill;
@@ -122,6 +122,13 @@
 }
 
 /*Mobile Break Point*/
+@media only screen and (max-width:400px) {
+    .btn {
+        display: none;
+    }
+}
+    
+
 @media only screen and (min-width: 400px) {
     // .header {
     // display: grid;
@@ -162,6 +169,10 @@
         }
     }
 
+    // .btn {
+    //     display: none;
+    // }
+
 
     .up-btn {
     width: 55px;
@@ -175,6 +186,11 @@
 }
 
 /*Tablet break point*/
+@media only screen and  (max-width:600px) {
+    .btn {
+        display: none;
+    }
+}
 @media only screen and (min-width: 600px) {
 .header {
     display: grid;
@@ -230,7 +246,7 @@
     padding: 16px 30px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20%;
     text-align: center;
   }
   
@@ -290,7 +306,7 @@
     padding: 16px 30px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20%;
     text-align: center;
   }
   
